@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 26 Aug, 2016 10:28:34 AM by Hibernate Tools 5.1.0.Beta1 -->
+<hibernate-mapping>
+    <class name="facebook.dao.User" table="user" catalog="post" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="email" type="string">
+            <column name="email" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" not-null="true" />
+        </property>
+        <property name="firstname" type="string">
+            <column name="firstname" not-null="true" />
+        </property>
+        <property name="image" type="string">
+            <column name="image" not-null="true" />
+        </property>
+        <set name="comments" table="comment" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="U_ID" not-null="true" />
+            </key>
+            <one-to-many class="facebook.dao.Comment" />
+        </set>
+        <set name="comments_1" table="comment" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="U_ID" not-null="true" />
+            </key>
+            <one-to-many class="facebook.dao.Comment" />
+        </set>
+        <set name="comments_2" table="comment" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="U_ID" not-null="true" />
+            </key>
+            <one-to-many class="facebook.dao.Comment" />
+        </set>
+    </class>
+</hibernate-mapping>
