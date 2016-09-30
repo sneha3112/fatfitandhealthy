@@ -11,9 +11,9 @@
 <%@page isELIgnored="false" %>
 <title>Insert title here</title>
 
-<link rel="stylesheet" href="/facebook/resources/bootstrap-3.3.6-dist/css/bootstrap.min.css">
-  <script src="/facebook/resources/bootstrap-3.3.6-dist/jquery.min.js"></script>
-  <script src="/facebook/resources/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/resources/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+  <script src="/resources/bootstrap-3.3.6-dist/jquery.min.js"></script>
+  <script src="/resources/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid Sans">
 </head>
 <body>
